@@ -1,0 +1,12 @@
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\DirectoryFileManager\DirectoryFileManager\bin\Debug\DirectoryFileManager.exe.config
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\DirectoryFileManager\DirectoryFileManager\bin\Debug\DirectoryFileManager.exe
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\DirectoryFileManager\DirectoryFileManager\bin\Debug\DirectoryFileManager.pdb
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\DirectoryFileManager\DirectoryFileManager\obj\Debug\DirectoryFileManager.csproj.AssemblyReference.cache
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\DirectoryFileManager\DirectoryFileManager\obj\Debug\DirectoryFileManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\DirectoryFileManager\DirectoryFileManager\obj\Debug\DirectoryFileManager.Form1.resources
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\DirectoryFileManager\DirectoryFileManager\obj\Debug\DirectoryFileManager.Properties.Resources.resources
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\DirectoryFileManager\DirectoryFileManager\obj\Debug\DirectoryFileManager.csproj.GenerateResource.cache
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\DirectoryFileManager\DirectoryFileManager\obj\Debug\DirectoryFileManager.csproj.CoreCompileInputs.cache
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\DirectoryFileManager\DirectoryFileManager\obj\Debug\DirectoryFileManager.exe
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\DirectoryFileManager\DirectoryFileManager\obj\Debug\DirectoryFileManager.pdb
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\DirectoryFileManager\DirectoryFileManager\obj\Debug\DirectoryFileManager.Form2.resources
