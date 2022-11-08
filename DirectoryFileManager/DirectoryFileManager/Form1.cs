@@ -19,6 +19,7 @@ namespace DirectoryFileManager
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Busca arquivos e directorios";
         }
 
         private void BotonCambiarDirectorio_Click(object sender, EventArgs e)
