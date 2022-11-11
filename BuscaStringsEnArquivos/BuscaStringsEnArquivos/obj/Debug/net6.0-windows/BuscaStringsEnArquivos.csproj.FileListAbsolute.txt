@@ -1,0 +1,17 @@
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\bin\Debug\net6.0-windows\BuscaStringsEnArquivos.exe
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\bin\Debug\net6.0-windows\BuscaStringsEnArquivos.deps.json
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\bin\Debug\net6.0-windows\BuscaStringsEnArquivos.runtimeconfig.json
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\bin\Debug\net6.0-windows\BuscaStringsEnArquivos.dll
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\bin\Debug\net6.0-windows\BuscaStringsEnArquivos.pdb
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\obj\Debug\net6.0-windows\BuscaStringsEnArquivos.csproj.AssemblyReference.cache
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\obj\Debug\net6.0-windows\BuscaStringsEnArquivos.Form1.resources
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\obj\Debug\net6.0-windows\BuscaStringsEnArquivos.csproj.GenerateResource.cache
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\obj\Debug\net6.0-windows\BuscaStringsEnArquivos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\obj\Debug\net6.0-windows\BuscaStringsEnArquivos.AssemblyInfoInputs.cache
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\obj\Debug\net6.0-windows\BuscaStringsEnArquivos.AssemblyInfo.cs
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\obj\Debug\net6.0-windows\BuscaStringsEnArquivos.csproj.CoreCompileInputs.cache
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\obj\Debug\net6.0-windows\BuscaStringsEnArquivos.dll
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\obj\Debug\net6.0-windows\refint\BuscaStringsEnArquivos.dll
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\obj\Debug\net6.0-windows\BuscaStringsEnArquivos.pdb
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\obj\Debug\net6.0-windows\BuscaStringsEnArquivos.genruntimeconfig.cache
+C:\Users\Pablo\Desktop\Proyectos C#\WindowsForms\BuscaStringsEnArquivos\BuscaStringsEnArquivos\obj\Debug\net6.0-windows\ref\BuscaStringsEnArquivos.dll
