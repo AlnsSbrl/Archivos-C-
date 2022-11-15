@@ -32,6 +32,15 @@ namespace DirectoryFileManager
                 {
                     path = path.Trim('%');
                     Directory.SetCurrentDirectory(Environment.GetEnvironmentVariable(path));
+                } else if(Directory.GetCurrentDirectory() == Directory.GetDirectoryRoot(path))
+                {
+                    lbWarnings.Text = "Xa estás no root";
+                }
+                else if (path=="..")
+                {
+                    
+                    path = Directory.GetParent(Directory.GetCurrentDirectory()).ToString();
+                    Directory.SetCurrentDirectory(path);
                 }
                 else
                 {
