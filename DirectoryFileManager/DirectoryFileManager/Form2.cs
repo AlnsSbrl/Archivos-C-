@@ -26,8 +26,7 @@ namespace DirectoryFileManager
 
                 textBoxArquivoTxt.Text = sr.ReadToEnd();
                 textBoxArquivoTxt.Enabled = !new FileInfo(path).IsReadOnly;
-                
-
+                modified = false;
                 sr.Close();
             }
             catch (IOException)
@@ -46,7 +45,7 @@ namespace DirectoryFileManager
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (textBoxArquivoTxt.Enabled)
+            if (textBoxArquivoTxt.Enabled && modified)
             {
                 DialogResult resposta = MessageBox.Show("Quere sobreescribir os cambios?", "Formulario", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
