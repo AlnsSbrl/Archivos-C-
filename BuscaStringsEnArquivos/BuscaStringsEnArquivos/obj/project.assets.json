@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pablo\\Desktop\\Proyectos C#\\WindowsForms\\BuscaStringsEnArquivos\\BuscaStringsEnArquivos\\BuscaStringsEnArquivos.csproj",
+      "projectUniqueName": "C:\\Users\\Pablo\\Desktop\\Proyectos C#\\Archivos C#\\BuscaStringsEnArquivos\\BuscaStringsEnArquivos\\BuscaStringsEnArquivos.csproj",
       "projectName": "BuscaStringsEnArquivos",
-      "projectPath": "C:\\Users\\Pablo\\Desktop\\Proyectos C#\\WindowsForms\\BuscaStringsEnArquivos\\BuscaStringsEnArquivos\\BuscaStringsEnArquivos.csproj",
+      "projectPath": "C:\\Users\\Pablo\\Desktop\\Proyectos C#\\Archivos C#\\BuscaStringsEnArquivos\\BuscaStringsEnArquivos\\BuscaStringsEnArquivos.csproj",
       "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pablo\\Desktop\\Proyectos C#\\WindowsForms\\BuscaStringsEnArquivos\\BuscaStringsEnArquivos\\obj\\",
+      "outputPath": "C:\\Users\\Pablo\\Desktop\\Proyectos C#\\Archivos C#\\BuscaStringsEnArquivos\\BuscaStringsEnArquivos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",

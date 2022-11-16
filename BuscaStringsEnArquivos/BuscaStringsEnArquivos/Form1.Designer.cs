@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txbChooseDirectory = new System.Windows.Forms.TextBox();
             this.txbKeyWord = new System.Windows.Forms.TextBox();
             this.btnSearchWordInDirectory = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // txbChooseDirectory
@@ -125,6 +127,8 @@
             this.label4.Size = new System.Drawing.Size(342, 15);
             this.label4.TabIndex = 9;
             this.label4.Text = "Add the extension of the files you want to track down next time";
+            this.toolTip1.SetToolTip(this.label4, "In order to include an extension, you have to follow this format \".txt\" splitting" +
+        " the extensions by commas if you want to add more than one");
             // 
             // label5
             // 
@@ -153,6 +157,7 @@
             this.Controls.Add(this.txbChooseDirectory);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,5 +176,6 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private ToolTip toolTip1;
     }
 }

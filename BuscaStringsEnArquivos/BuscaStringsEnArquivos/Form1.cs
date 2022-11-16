@@ -13,15 +13,19 @@ namespace BuscaStringsEnArquivos
         public Form1()
         {
             InitializeComponent();
+            Text = "Word finder";
             StreamReader sr;
             try
             {
-                sr= new StreamReader(Environment.GetEnvironmentVariable("homedrive") + "\\extensiones.txt");
-                label5.Text+= sr.ReadToEnd();
+                sr = new StreamReader(Environment.GetEnvironmentVariable("homepath") + "\\extensiones.txt");
+                label5.Text += sr.ReadToEnd();
+                sr.Close();
+                //igual mejor usar File.exists que este metodo
             }
             catch (FileNotFoundException)
             {
                 label5.Text += ".txt";
+
             }
         }
 
@@ -38,19 +42,20 @@ namespace BuscaStringsEnArquivos
             StreamReader sr;
             string extensiones;
             try
-            {            
-                sr = new StreamReader(Environment.GetEnvironmentVariable("homedrive") + "\\extensiones.txt");
+            {
+                sr = new StreamReader(Environment.GetEnvironmentVariable("homepath") + "\\extensiones.txt");
                 extensiones = sr.ReadToEnd();
+                sr.Close();
             }
             catch (FileNotFoundException)
             {
                 extensiones = ".txt";
             }
-            
             {
                 using (sr = new StreamReader(arquivo.FullName))
                 {
-                    if (sr.ReadToEnd().Contains(word, chkIgnoreCase.Checked ? StringComparison.OrdinalIgnoreCase : StringComparison.Ordinal) && extensiones.Contains(arquivo.Extension))
+                    //no me lee el pdf que hice aunque le ponga la palabra. Puede detectar que es.pdf, pero no leer su contenido
+                    if (sr.ReadToEnd().Contains(word, chkIgnoreCase.Checked ? StringComparison.OrdinalIgnoreCase : StringComparison.Ordinal) && extensiones.Contains(arquivo.Extension.ToString()))
                     {
                         Delega d = cambiaTexto;
                         Invoke(d, arquivo.Name, txbResu);
@@ -77,26 +82,25 @@ namespace BuscaStringsEnArquivos
         {
             if (txbFileTracking.Text != "")
             {
-                
-                Regex extensionCheck= new Regex(@"^.*.(pdf|txt|doc|docx|docm|odt|rtf|csv|xls|xlsx|xlsm|ods|pps|ppt|ppsx|pptx|ppsm|pptm|potx|odp)");
-                string[] extensions = txbFileTracking.Text.Split(",");
-                string extensionesValidas="";
-                foreach (string extension in extensions)
+                //Regex extensionCheck = new Regex(@"(.pdf|.txt|.doc|.docx|.docm|.odt|.rtf|.csv|.xls|.xlsx|.xlsm|.ods|.pps|.ppt|.ppsx|.pptx|.ppsm|.pptm|.potx|.odp)");
+                string extensionesValidas = "";
+                if (txbFileTracking.Text.Contains(","))
                 {
-                   if( extensionCheck.IsMatch(extension) && true /*comprobar si no está ya en el archivo */)
+                    string[] extensions = txbFileTracking.Text.Split(",");
+                    //creo que el regex no me funciona del todo bien, igual deberia sudar de el
+                    //y hacer que se pudiesen meter todo tipo de extensiones??
+                    for (int i = 0; i < extensions.Length; i++)
                     {
-                        extensionesValidas += extension + ",";
+                        extensionesValidas += "." + extensions[i].Trim();
                     }
                 }
-                try
+                else
                 {
-                    StreamWriter sw = new StreamWriter(Environment.GetEnvironmentVariable("homedrive") + "\\extensiones.txt");
-                    sw.Write(extensionesValidas);
+                    extensionesValidas = "." + txbFileTracking.Text.Trim();
                 }
-                catch (Exception)
+                using (StreamWriter sw = new StreamWriter(Environment.GetEnvironmentVariable("homepath") + "\\extensiones.txt"))
                 {
-
-                    throw;
+                    sw.Write(extensionesValidas);
                 }
             }
         }
