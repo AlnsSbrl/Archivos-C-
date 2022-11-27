@@ -1,0 +1,15 @@
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\bin\Debug\net6.0\ExamenHogwarts.exe
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\bin\Debug\net6.0\ExamenHogwarts.deps.json
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\bin\Debug\net6.0\ExamenHogwarts.runtimeconfig.json
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\bin\Debug\net6.0\ExamenHogwarts.dll
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\bin\Debug\net6.0\ref\ExamenHogwarts.dll
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\bin\Debug\net6.0\ExamenHogwarts.pdb
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\obj\Debug\net6.0\ExamenHogwarts.csproj.AssemblyReference.cache
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\obj\Debug\net6.0\ExamenHogwarts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\obj\Debug\net6.0\ExamenHogwarts.AssemblyInfoInputs.cache
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\obj\Debug\net6.0\ExamenHogwarts.AssemblyInfo.cs
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\obj\Debug\net6.0\ExamenHogwarts.csproj.CoreCompileInputs.cache
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\obj\Debug\net6.0\ExamenHogwarts.dll
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\obj\Debug\net6.0\ref\ExamenHogwarts.dll
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\obj\Debug\net6.0\ExamenHogwarts.pdb
+C:\Users\Pablo\Desktop\Repositorios de ejercicios de clase\Archivos C#\ExamenHogwarts\ExamenHogwarts\obj\Debug\net6.0\ExamenHogwarts.genruntimeconfig.cache
