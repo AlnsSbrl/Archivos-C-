@@ -1,0 +1,15 @@
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\bin\Debug\net6.0\PersonnelManager.exe
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\bin\Debug\net6.0\PersonnelManager.deps.json
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\bin\Debug\net6.0\PersonnelManager.runtimeconfig.json
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\bin\Debug\net6.0\PersonnelManager.dll
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\bin\Debug\net6.0\PersonnelManager.pdb
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\obj\Debug\net6.0\PersonnelManager.csproj.AssemblyReference.cache
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\obj\Debug\net6.0\PersonnelManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\obj\Debug\net6.0\PersonnelManager.AssemblyInfoInputs.cache
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\obj\Debug\net6.0\PersonnelManager.AssemblyInfo.cs
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\obj\Debug\net6.0\PersonnelManager.csproj.CoreCompileInputs.cache
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\obj\Debug\net6.0\PersonnelManager.dll
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\obj\Debug\net6.0\refint\PersonnelManager.dll
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\obj\Debug\net6.0\PersonnelManager.pdb
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\obj\Debug\net6.0\PersonnelManager.genruntimeconfig.cache
+C:\Users\Pablo\Desktop\Proyectos C#\Archivos C#\PersonnelManager\PersonnelManager\obj\Debug\net6.0\ref\PersonnelManager.dll

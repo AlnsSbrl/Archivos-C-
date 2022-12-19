@@ -62,7 +62,7 @@ namespace PersonnelManager
         }
 
         public Empleado()
-            : this(0, "", "", "", "", 0)
+            : this(0, "", "", "", "1", 0)
         {
         }
         public Empleado(double salario, string telefono, string nombre, string apellidos, string dni, int edad)

@@ -57,7 +57,7 @@ namespace PersonnelManager
         }
 
         public Directivo()
-            : this("", 0, 0, "", "", "", 0)
+            : this("", 0, 0, "", "", "1", 0)
         {
         }
         //Sobrecarga el operador -- (mira el apéndice y deduce como hacerlo) de forma que si se aplica a un 

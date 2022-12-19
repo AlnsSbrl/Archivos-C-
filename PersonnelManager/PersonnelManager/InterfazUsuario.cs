@@ -78,7 +78,7 @@ ganarPasta con parámetro 1000.
                     Console.WriteLine("De verdade quere despedir a esas persoas? ON THIS ECONOMY?" +
                         "\n1)Sí" +
                         "\n2)No");
-                } while (int.TryParse(Console.ReadLine(), out borrar));
+                } while (!int.TryParse(Console.ReadLine(), out borrar));
                 if (borrar == 1)
                 {
                     listaPersonas.Eliminar(rango + index, index);
@@ -92,14 +92,13 @@ ganarPasta con parámetro 1000.
         public void MuestraTodaLaLista()
         {
             int i=0;
-            Console.WriteLine($"{0,3}{1,10}{2,20}{3,7}","Num", "Nome","Apelidos","Estatus");
+            Console.WriteLine($"{"Num",3}{"Nome",10}{"Apelidos",20}{"Status",7}");
             foreach (Persona persona in listaPersonas.personasDeLaEmpresa)
             {
-                Console.WriteLine($"{0,3}{1,10}{2,20}{3,7}",
-                    i, 
-                    persona.Nombre.Length > 10 ? persona.Nombre.Substring(0, 7) + "..." : persona.Nombre,
-                    persona.Apellidos.Length>20?persona.Apellidos.Substring(0,17)+"...":persona.Apellidos,
-                    persona is Directivo?"D "/*+((Directivo)persona).ganarPasta(1000)*/:"E");
+                Console.WriteLine($"{i,3}" +
+                    $"{(persona.Nombre.Length > 10 ? persona.Nombre.Substring(0, 7) + "..." : persona.Nombre),10}" +
+                    $"{(persona.Apellidos.Length > 20 ? persona.Apellidos.Substring(0, 17) + "..." : persona.Apellidos),20}" +
+                    $"{(persona is Directivo ? "D"/*+((Directivo)persona).ganarPasta(1000)*/: "E"),7}");
                 i++;
             }
         }
@@ -126,6 +125,11 @@ ganarPasta con parámetro 1000.
         public void Inicio()
         {
             int opcion;
+            Directivo dir = new Directivo("finanzas",3,"pedro","picapiedra","53820240",43);
+            Empleado emp = new Empleado(35000,""+674839292,"alba","martinez","53820241",12);
+            listaPersonas.personasDeLaEmpresa.Add(emp);
+            listaPersonas.personasDeLaEmpresa.Add(dir);
+
             do
             {
                 Console.WriteLine("Escolla unha opción:" +

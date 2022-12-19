@@ -66,7 +66,7 @@ namespace PersonnelManager
             Edad = edad;
         }
         public Persona()
-            : this("", "", "", 0)
+            : this("", "", "1", 0)
         {
         }
     }
