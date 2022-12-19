@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e1ece406-2a21-4e8f-b997-c3b7b86720f3": {
+      "ProjectGuid": "e1ece406-2a21-4e8f-b997-c3b7b86720f3",
+      "DisplayName": "PersonnelManager",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
