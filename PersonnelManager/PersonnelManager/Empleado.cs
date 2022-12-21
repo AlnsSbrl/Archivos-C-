@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PersonnelManager
 {
-    class Empleado : Persona
+    public class Empleado : Persona
     {
         private double salario;
         private double IRPF;

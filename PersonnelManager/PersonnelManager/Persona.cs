@@ -4,7 +4,7 @@ Utilizamos el resto de la división para calcular la letra. Dicho resto estará 
 Según el valor obtenido, sabremos qué letra corresponde siguiendo el siguiente código: TRWAGMYFPDXBNJZSQVHLCKE. Aquí, la T corresponde al valor 0 y la E al 22. */
 namespace PersonnelManager
 {
-    abstract class Persona
+    public abstract class Persona
     {
         public string Nombre;
         public string Apellidos;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PersonnelManager
 {
-    class Directivo : Persona, IPastaGansa
+    public class Directivo : Persona, IPastaGansa
     {
         public string departamento;
         private double beneficios;

@@ -125,6 +125,24 @@ ganarPasta con parámetro 1000.
         public void Inicio()
         {
             int opcion;
+            string path = Environment.GetEnvironmentVariable("appdata") +"\\empresa.dat";
+            FileInfo dataFile = new FileInfo(path);
+            if (dataFile.Exists)
+            {
+                List<Persona> personas = new List<Persona>;
+                using(PersonReader leePerso = new PersonReader(new FileStream(path, FileMode.Open))
+                {
+                    try
+                    {
+                        while (true)
+                        {
+                            personas.Add(leePerso.ReadEmployee());
+                            personas.Add(leePerso.ReadDirect())
+                        }
+                    }
+                }
+
+            }
             Directivo dir = new Directivo("finanzas",3,"pedro","picapiedra","53820240",43);
             Empleado emp = new Empleado(35000,""+674839292,"alba","martinez","53820241",12);
             listaPersonas.personasDeLaEmpresa.Add(emp);
@@ -138,7 +156,7 @@ ganarPasta con parámetro 1000.
                     "\n3)Visualizar todas as listas de persoas" +
                     "\n4)Visualizar unha persoa" +
                     "\n5)Saír");
-                int.TryParse(Console.ReadLine(), out opcion); //lo malo del try parse es que no informo al usuario
+                int.TryParse(Console.ReadLine(), out opcion);
                 switch (opcion)
                 {
                     case 1:
@@ -156,6 +174,8 @@ ganarPasta con parámetro 1000.
                     case 5:
                         Console.WriteLine("Chao pescao");
                         break;
+                    default:
+                        Console.WriteLine("Erro inesperado");
                 }
             } while (opcion != 5);
         }
