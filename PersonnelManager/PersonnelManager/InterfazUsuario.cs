@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,24 +9,8 @@ namespace PersonnelManager
 {
     public class InterfazUsuario
     {
-        bool finalizar = false;
         GestorPersonas listaPersonas = new GestorPersonas();
-        /*
-• Eliminar personas (Se ha de pedir un rango de posiciones). Muestra los
-datos de las personas a eliminar y pide confirmación previa.
-• Visualizar toda las lista de Personas.
-En cada línea aparecerá formateado el número de posición en la
-colección (3 caracteres), Nombre (máximo 10 caracteres), Apellidos
-(Máximo 20 caracteres), una E si es empleado y D si es Directivo.
-Deben aparecer cabeceras en la parte superior.
-Si el Nombre o los apellidos son muy grandes que los corte y le ponga
-puntos suspensivos al final. Por ejemplo Nabucodonosor aparecerá como
-Nabucod… (así ocupa los 10 caracteres).
-• Visualización de una persona. Se pide el comienzo del apellido y
-muestra los datos de la primera persona que corresponda simplemente
-llamando a la función MostrarDatos. Si además es directivo, llama a
-ganarPasta con parámetro 1000.
-• Salir del programa */
+        string path = Environment.GetEnvironmentVariable("appdata") + "\\empresa.dat";
         public void InsertarPersona()
         {
             int op;
@@ -49,9 +34,8 @@ ganarPasta con parámetro 1000.
                 Directivo direct = new Directivo();
                 direct.PideCampos();
                 int index = listaPersonas.Posicion(direct.Edad);
-                listaPersonas.personasDeLaEmpresa.Insert(index - 1, direct);
+                listaPersonas.personasDeLaEmpresa.Insert(index, direct);
             }
-
         }
         public void EliminarPersona()
         {
@@ -91,7 +75,7 @@ ganarPasta con parámetro 1000.
         }
         public void MuestraTodaLaLista()
         {
-            int i=0;
+            int i = 0;
             Console.WriteLine($"{"Num",3}{"Nome",10}{"Apelidos",20}{"Status",7}");
             foreach (Persona persona in listaPersonas.personasDeLaEmpresa)
             {
@@ -113,7 +97,7 @@ ganarPasta con parámetro 1000.
                 {
                     segueBuscando = false;
                     listaPersonas.personasDeLaEmpresa[i].MuestraCampos();
-                    if(listaPersonas.personasDeLaEmpresa[i] is Directivo)
+                    if (listaPersonas.personasDeLaEmpresa[i] is Directivo)
                     {
                         //listaPersonas.personasDeLaEmpresa[i].GetType() == typeof(Directivo) tmb vale
                         ((Directivo)listaPersonas.personasDeLaEmpresa[i]).ganarPasta(1000);
@@ -121,32 +105,64 @@ ganarPasta con parámetro 1000.
                 }
             }
         }
-
-        public void Inicio()
+        public void CerrarPrograma()
         {
-            int opcion;
-            string path = Environment.GetEnvironmentVariable("appdata") +"\\empresa.dat";
-            FileInfo dataFile = new FileInfo(path);
-            if (dataFile.Exists)
+            using (PersonWriter psw = new PersonWriter(new FileStream(path, FileMode.Create)))
             {
-                List<Persona> personas = new List<Persona>;
-                using(PersonReader leePerso = new PersonReader(new FileStream(path, FileMode.Open))
+                try
                 {
-                    try
+                    for (int i = 0; i < listaPersonas.personasDeLaEmpresa.Count; i++)
                     {
-                        while (true)
+                        if (listaPersonas.personasDeLaEmpresa[i] is Empleado)
                         {
-                            personas.Add(leePerso.ReadEmployee());
-                            personas.Add(leePerso.ReadDirect())
+                            psw.Write(0);
+                            psw.Write((Empleado)listaPersonas.personasDeLaEmpresa[i]);
+                            Console.WriteLine("Guardo");
+                        }
+                        else if (listaPersonas.personasDeLaEmpresa[i] is Directivo)
+                        {
+                            psw.Write(1);
+                            psw.Write((Directivo)listaPersonas.personasDeLaEmpresa[i]);
+                            Console.WriteLine("otro guardado");
                         }
                     }
                 }
+                catch (IOException e)
+                {
 
+                }
             }
-            Directivo dir = new Directivo("finanzas",3,"pedro","picapiedra","53820240",43);
-            Empleado emp = new Empleado(35000,""+674839292,"alba","martinez","53820241",12);
-            listaPersonas.personasDeLaEmpresa.Add(emp);
-            listaPersonas.personasDeLaEmpresa.Add(dir);
+        }
+        public void Inicio()
+        {
+            int opcion;
+            FileInfo dataFile = new FileInfo(path);
+            if (dataFile.Exists)
+            {
+                List<Persona> personas = new List<Persona>();
+                PersonReader leePerso = new PersonReader(new FileStream(path, FileMode.Open));
+                try
+                {
+                    while (true)
+                    {
+                        int header = leePerso.ReadInt32();
+                        if (header == 0)
+                        {
+                            listaPersonas.personasDeLaEmpresa.Add(leePerso.ReadEmployee());
+                            Console.WriteLine("EMPLEAO");
+                        }
+                        else
+                        {
+                            listaPersonas.personasDeLaEmpresa.Add(leePerso.ReadDirect());
+                            Console.WriteLine("DIRE");
+                        }
+                    }
+                }
+                catch (EndOfStreamException e)
+                {
+                    leePerso.Dispose();
+                }
+            }
 
             do
             {
@@ -172,10 +188,11 @@ ganarPasta con parámetro 1000.
                         MuestraPersona();
                         break;
                     case 5:
-                        Console.WriteLine("Chao pescao");
+                        CerrarPrograma();
                         break;
                     default:
                         Console.WriteLine("Erro inesperado");
+                        break;
                 }
             } while (opcion != 5);
         }

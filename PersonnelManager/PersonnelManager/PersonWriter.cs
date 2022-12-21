@@ -14,6 +14,7 @@ namespace PersonnelManager
         
         public void Write(Empleado emp)
         {
+            
             base.Write(emp.Salario);
             base.Write(emp.Telefono);
             base.Write(emp.Nombre);
@@ -23,6 +24,7 @@ namespace PersonnelManager
         }
         public void Write(Directivo dir)
         {
+            
             base.Write(dir.departamento);
             base.Write(dir.PersonasACargo);
             base.Write(dir.Nombre);

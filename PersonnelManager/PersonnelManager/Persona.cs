@@ -22,6 +22,10 @@ namespace PersonnelManager
                 {
                     dni = value.Substring(0, value.Length - 1);
                 }
+                catch (System.FormatException)
+                {
+                    dni = value.Substring(0, value.Length - 1);
+                }
             }
             get => dni + letrasDNI[Convert.ToInt32(dni) % 23];
         }
